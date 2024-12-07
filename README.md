@@ -1,4 +1,3 @@
-Below is a detailed `README.md` file for your open-source project:
 
 
 # Chat API Client for Java
