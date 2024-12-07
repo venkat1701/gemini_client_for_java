@@ -1,7 +1,7 @@
-package io.github.bhavuklabs.javageminiclient.commons.prompt;
+package io.github.venkat1701.javageminiclient.commons.prompt;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.github.bhavuklabs.javageminiclient.commons.prompt.generic.GenericPrompt;
+import io.github.venkat1701.javageminiclient.commons.prompt.generic.GenericPrompt;
 
 /**
  * The {@code ResponsePrompt} class is a generic implementation of the {@link GenericPrompt} interface,
@@ -15,7 +15,7 @@ import io.github.bhavuklabs.javageminiclient.commons.prompt.generic.GenericPromp
  * <h2>Usage Example</h2>
  * <pre>
  * {@code
- * import io.github.bhavuklabs.commons.prompt.ResponsePrompt;
+ * import io.github.venkat1701.commons.prompt.ResponsePrompt;
  *
  * public class ResponsePromptExample {
  *     public static void main(String[] args) {

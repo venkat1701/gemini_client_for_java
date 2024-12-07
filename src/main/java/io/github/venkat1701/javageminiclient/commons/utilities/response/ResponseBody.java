@@ -1,6 +1,6 @@
-package io.github.bhavuklabs.javageminiclient.commons.utilities.response;
+package io.github.venkat1701.javageminiclient.commons.utilities.response;
 
-import io.github.bhavuklabs.javageminiclient.commons.utilities.commons.Content;
+import io.github.venkat1701.javageminiclient.commons.utilities.commons.Content;
 
 import java.util.HashMap;
 import java.util.List;

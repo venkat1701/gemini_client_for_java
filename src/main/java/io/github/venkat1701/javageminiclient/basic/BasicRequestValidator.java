@@ -1,9 +1,9 @@
 
-package io.github.bhavuklabs.javageminiclient.basic;
+package io.github.venkat1701.javageminiclient.basic;
 
-import io.github.bhavuklabs.javageminiclient.commons.exceptions.ValidationException;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.Request;
-import io.github.bhavuklabs.javageminiclient.commons.validators.RequestValidator;
+import io.github.venkat1701.javageminiclient.commons.exceptions.ValidationException;
+import io.github.venkat1701.javageminiclient.commons.utilities.Request;
+import io.github.venkat1701.javageminiclient.commons.validators.RequestValidator;
 
 import java.net.URI;
 import java.net.URISyntaxException;

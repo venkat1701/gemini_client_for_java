@@ -1,6 +1,6 @@
-package io.github.bhavuklabs.javageminiclient.commons.utilities;
+package io.github.venkat1701.javageminiclient.commons.utilities;
 
-import io.github.bhavuklabs.javageminiclient.commons.utilities.response.ResponseBody;
+import io.github.venkat1701.javageminiclient.commons.utilities.response.ResponseBody;
 
 import java.util.Map;
 

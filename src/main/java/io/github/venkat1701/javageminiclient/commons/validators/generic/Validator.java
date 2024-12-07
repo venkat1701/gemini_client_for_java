@@ -1,6 +1,6 @@
-package io.github.bhavuklabs.javageminiclient.commons.validators.generic;
+package io.github.venkat1701.javageminiclient.commons.validators.generic;
 
-import io.github.bhavuklabs.javageminiclient.commons.exceptions.ValidationException;
+import io.github.venkat1701.javageminiclient.commons.exceptions.ValidationException;
 
 public interface Validator<T> {
 

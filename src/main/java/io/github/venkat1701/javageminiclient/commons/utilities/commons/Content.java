@@ -1,4 +1,4 @@
-package io.github.bhavuklabs.javageminiclient.commons.utilities.commons;
+package io.github.venkat1701.javageminiclient.commons.utilities.commons;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package io.github.bhavuklabs.javageminiclient.commons.prompt.generic;
+package io.github.venkat1701.javageminiclient.commons.prompt.generic;
 
-import io.github.bhavuklabs.javageminiclient.commons.prompt.RequestPrompt;
-import io.github.bhavuklabs.javageminiclient.commons.prompt.ResponsePrompt;
+import io.github.venkat1701.javageminiclient.commons.prompt.RequestPrompt;
+import io.github.venkat1701.javageminiclient.commons.prompt.ResponsePrompt;
 
 /**
  * The {@code GenericPrompt} interface defines a generic contract for creating and managing prompts
@@ -16,7 +16,7 @@ import io.github.bhavuklabs.javageminiclient.commons.prompt.ResponsePrompt;
  * <h2>Usage Example</h2>
  * <pre>
  * {@code
- * import io.github.bhavuklabs.commons.prompt.generic.GenericPrompt;
+ * import io.github.venkat1701.commons.prompt.generic.GenericPrompt;
  *
  * public class GenericPromptExample implements GenericPrompt<String> {
  *

@@ -1,4 +1,4 @@
-package io.github.bhavuklabs.javageminiclient.commons.exceptions;
+package io.github.venkat1701.javageminiclient.commons.exceptions;
 
 /**
  * The {@code ValidationException} class is a custom exception used to indicate validation errors

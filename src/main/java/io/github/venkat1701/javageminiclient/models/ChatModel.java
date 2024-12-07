@@ -1,17 +1,17 @@
-package io.github.bhavuklabs.javageminiclient.models;
+package io.github.venkat1701.javageminiclient.models;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.bhavuklabs.javageminiclient.commons.exceptions.ValidationException;
-import io.github.bhavuklabs.javageminiclient.commons.model.Model;
-import io.github.bhavuklabs.javageminiclient.commons.prompt.ResponsePrompt;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.Request;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.commons.Content;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.commons.Part;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.request.RequestBody;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.response.ResponseBody;
-import io.github.bhavuklabs.javageminiclient.commons.validators.generic.Validator;
-import io.github.bhavuklabs.javageminiclient.response.ChatResponse;
+import io.github.venkat1701.javageminiclient.commons.exceptions.ValidationException;
+import io.github.venkat1701.javageminiclient.commons.model.Model;
+import io.github.venkat1701.javageminiclient.commons.prompt.ResponsePrompt;
+import io.github.venkat1701.javageminiclient.commons.utilities.Request;
+import io.github.venkat1701.javageminiclient.commons.utilities.commons.Content;
+import io.github.venkat1701.javageminiclient.commons.utilities.commons.Part;
+import io.github.venkat1701.javageminiclient.commons.utilities.request.RequestBody;
+import io.github.venkat1701.javageminiclient.commons.utilities.response.ResponseBody;
+import io.github.venkat1701.javageminiclient.commons.validators.generic.Validator;
+import io.github.venkat1701.javageminiclient.response.ChatResponse;
 import org.springframework.http.*;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -200,10 +200,10 @@ public class ChatModel implements Model {
     }
 
     /**
-     * Parses the usage metadata JSON node and transforms it into {@link io.github.bhavuklabs.javageminiclient.commons.utilities.response.ResponseBody.UsageMetadata}.
+     * Parses the usage metadata JSON node and transforms it into {@link io.github.venkat1701.javageminiclient.commons.utilities.response.ResponseBody.UsageMetadata}.
      *
      * @param usageMetadataNode the JSON node containing usage metadata.
-     * @return a {@link io.github.bhavuklabs.javageminiclient.commons.utilities.response.ResponseBody.UsageMetadata} object.
+     * @return a {@link io.github.venkat1701.javageminiclient.commons.utilities.response.ResponseBody.UsageMetadata} object.
      */
     private ResponseBody.UsageMetadata parseUsageMetadata(JsonNode usageMetadataNode) {
         if (usageMetadataNode == null || !usageMetadataNode.isObject()) {

@@ -1,14 +1,14 @@
-package io.github.bhavuklabs.javageminiclient;
+package io.github.venkat1701.javageminiclient;
 
-import io.github.bhavuklabs.javageminiclient.basic.BasicRequestValidator;
-import io.github.bhavuklabs.javageminiclient.commons.exceptions.ValidationException;
-import io.github.bhavuklabs.javageminiclient.commons.prompt.RequestPrompt;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.commons.Content;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.commons.Part;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.request.RequestBody;
-import io.github.bhavuklabs.javageminiclient.models.ChatModel;
-import io.github.bhavuklabs.javageminiclient.request.ChatRequest;
-import io.github.bhavuklabs.javageminiclient.response.ChatResponse;
+import io.github.venkat1701.javageminiclient.basic.BasicRequestValidator;
+import io.github.venkat1701.javageminiclient.commons.exceptions.ValidationException;
+import io.github.venkat1701.javageminiclient.commons.prompt.RequestPrompt;
+import io.github.venkat1701.javageminiclient.commons.utilities.commons.Content;
+import io.github.venkat1701.javageminiclient.commons.utilities.commons.Part;
+import io.github.venkat1701.javageminiclient.commons.utilities.request.RequestBody;
+import io.github.venkat1701.javageminiclient.models.ChatModel;
+import io.github.venkat1701.javageminiclient.request.ChatRequest;
+import io.github.venkat1701.javageminiclient.response.ChatResponse;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;

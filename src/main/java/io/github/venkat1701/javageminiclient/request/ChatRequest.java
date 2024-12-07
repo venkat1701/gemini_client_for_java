@@ -1,7 +1,7 @@
-package io.github.bhavuklabs.javageminiclient.request;
+package io.github.venkat1701.javageminiclient.request;
 
-import io.github.bhavuklabs.javageminiclient.commons.utilities.Request;
-import io.github.bhavuklabs.javageminiclient.commons.utilities.request.RequestBody;
+import io.github.venkat1701.javageminiclient.commons.utilities.Request;
+import io.github.venkat1701.javageminiclient.commons.utilities.request.RequestBody;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
