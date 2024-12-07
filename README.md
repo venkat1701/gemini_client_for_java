@@ -27,6 +27,25 @@ You can include the library in your project by cloning this repository or using 
 - Dependencies:
   - [Jackson Databind](https://github.com/FasterXML/jackson-databind)
 
+### Adding dependency to your Project
+Add Jitpack repository to your project.
+```maven
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+```
+and then add the dependency 
+```maven
+<dependency>
+  <groupId>com.github.venkat1701</groupId>
+  <artifactId>gemini_client_for_java</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ## Usage
 
 ### Building a Request
