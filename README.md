@@ -39,7 +39,7 @@ Add Jitpack repository to your project.
 and then add the dependency 
 ```maven
 <dependency>
-  <groupId>com.github.venkat1701</groupId>
+  <groupId>io.github.venkat1701</groupId>
   <artifactId>gemini_client_for_java</artifactId>
   <version>1.0.0</version>
 </dependency>
