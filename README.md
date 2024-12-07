@@ -27,22 +27,6 @@ You can include the library in your project by cloning this repository or using 
 - Dependencies:
   - [Jackson Databind](https://github.com/FasterXML/jackson-databind)
 
-### Add to your project
-
-#### Maven
-```xml
-<dependency>
-    <groupId>io.github.bhavuklabs</groupId>
-    <artifactId>chat-api-client</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-
-#### Gradle
-```gradle
-implementation 'io.github.bhavuklabs:chat-api-client:1.0.0'
-```
-
 ## Usage
 
 ### Building a Request
