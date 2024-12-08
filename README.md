@@ -46,60 +46,47 @@ and then add the dependency
 ```
 
 ## Usage
-
-### Building a Request
-
-Create `ChatRequest` objects using its constructors:
-
-#### Example 1: Basic GET Request
 ```java
-ChatRequest getRequest = new ChatRequest("https://api.example.com/messages", "YOUR_API_KEY");
-```
+public class ChatModelExample {
+    public static void main(String[] args) {
+        // Step 1: Build the ChatRequest
+        ChatRequest request = new ChatRequest(
+                "https://api.example.com/generate", // API URL
+                "YOUR_API_KEY",                    // API Key
+                new RequestBody("{ \"prompt\": \"Generate some meaningful content.\" }") // Request Body
+        ).withHeader("Content-Type", "application/json");
 
-#### Example 2: POST Request with a Body
-```java
-RequestBody body = new RequestBody("{ \"message\": \"Hello World\" }");
-ChatRequest postRequest = new ChatRequest("https://api.example.com/messages", "YOUR_API_KEY", body);
-```
+        // Step 2: Execute the Request
+        try {
+            ChatModel chatModel = new ChatModel(new RestTemplate(), new BasicRequestValidator());
 
-#### Example 3: Adding Headers and Parameters
-```java
-ChatRequest requestWithHeaders = postRequest
-    .withHeader("Content-Type", "application/json")
-    .withParameter("lang", "en");
-```
+            // Validate the request before execution
+            if (!request.validate()) {
+                throw new IllegalArgumentException("Invalid request parameters");
+            }
 
-### Validating a Request
-```java
-if (getRequest.validate()) {
-    System.out.println("Request is valid");
-} else {
-    System.out.println("Request is invalid");
+            ChatResponse response = chatModel.call(request);
+
+            // Step 3: Handle the Response
+            if (response.isSuccessfull()) {
+                // Extract and process the body content
+                String rawJson = response.getBody().getContent();
+                System.out.println("Raw Response: " + rawJson);
+
+                // Parse the response using Gson or another library
+                Gson gson = new Gson();
+                ResponseData parsedData = gson.fromJson(rawJson, ResponseData.class);
+
+                System.out.println("Parsed Response: " + parsedData);
+            } else {
+                System.err.println("API call failed with status: " + response.getStatusCode());
+            }
+        } catch (Exception e) {
+            // Step 4: Handle Exceptions
+            System.err.println("An error occurred: " + e.getMessage());
+        }
+    }
 }
-```
-
-### Handling Responses
-
-`ChatResponse` helps parse and manage HTTP responses:
-
-#### Example 1: Parsing the Response
-```java
-ChatResponse response = new ChatResponse.Builder()
-    .statusCode(200)
-    .headers(Map.of("Content-Type", "application/json"))
-    .body(new ResponseBody("{ \"status\": \"ok\" }"))
-    .build();
-
-if (response.isSuccessfull()) {
-    String responseBody = response.getBody().getContent();
-    System.out.println("Response: " + responseBody);
-}
-```
-
-#### Example 2: Accessing Headers
-```java
-Map<String, String> headers = response.getHeaders();
-headers.forEach((key, value) -> System.out.println(key + ": " + value));
 ```
 
 ### Advanced Usage
